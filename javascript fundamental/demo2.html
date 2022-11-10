@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="font-size:30px;">
+    <h4 style="color:violet;">javascript.</h4>
+    <p id="demo2"></p>
+    <script type="text/javascript">
+        alert("hello");
+
+        let firstName=prompt("firstname" +'');
+        let lastName=prompt("lastname" +'');
+        let fullName=firstName+''+lastName;
+
+        let age=prompt('what is your age','18');
+        let result=(age<18)?'baby':'young';
+        alert(`welcome ${fullName}`);
+        // let string="";
+        // for(let i=1;i<=5;i++)
+        // {
+        //     for(let j=0;j<5-i;j++){
+
+            
+        //     string+=" ";
+        //     // document.write("*");
+        //     } 
+        //     for(let k=0;k<i;k++)
+        //     {
+        //         string+="*";
+        //     }
+        //     string +="<br>";  
+        // }
+        //  document.write(string);
+        // console.log(string);
+        let n = 5;
+        let string = "";
+for (let i = 1; i <= n; i++) {
+  // printing spaces
+  for (let j = 0; j < n - i; j++) {
+    string += " ";
+  }
+  // printing star
+  for (let k = 0; k < i; k++) {
+    string += "*";
+  }
+  string += "<br>";
+}
+document.write(string);
+console.log(string);
+        document.getElementById('demo2').innerHTML='FullName :'+fullName+"<br>"+'Age :'+result;
+        // "<br>"+'patten:'+"<br>"+string;
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function myMess(from, text) {
+        //     alert(from + ':' + text)
+        // }
+        // myMess('aangi', 'hii');
+
+        // function sum(a, b) {
+        //     return a + b;
+        // }
+        // let result = sum(2, 3);
+        // alert(result);
+
+        // function checkAge(age) {
+        //     if (age > 18) {
+        //         return confirm('parents are allow..');
+
+        //     } else {
+        //         return confirm('Did parents allow you?');
+        //     }
+        // }
+
+        // checkAge(20);
+
+        // let sysHii = function () { //function Expression
+        //     alert('hello');
+        // }
+        // sysHii();
+
+        // let func = sysHii();
+        // sysHii();
+
+        ask('do you something??', function () { alert('you are agree'); }, function () { alert('not agree'); });
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        function showOk() {
+            alert("you are agree..");
+        }
+        function showCancel() {
+            alert("not agree..");
+        }
+
+
+    </script>
+</body>
+
+</html>
