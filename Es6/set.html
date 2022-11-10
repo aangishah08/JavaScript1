@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="setdemo">sets keyword</p>
+    <script>
+        const letters=new Set(["a","b","v"]);
+        letters.add("d");
+        const s="s";
+        const z="z";
+        letters.add(s);
+        letters.add(z);
+        let text = "";
+        for (const entry of letters.entries()) {
+            text += entry + "<br>";
+        }
+        document.getElementById("setdemo").innerHTML=text;
+    </script>
+</body>
+</html>

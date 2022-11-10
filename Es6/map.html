@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">map function.. </p>
+    <script>
+        const car=new Map([
+        ['BMW',2000],
+        ['kia',3000],
+        ['Volvo',1000]
+    ]);
+        let text="";
+    // car.forEach(function(key,value)
+    // {
+    //     text+=value+"-"+key+"<br>";
+    // })
+    // for(let x of car.keys())
+    // {
+    //     text+=x+"<br>";
+    // }
+    car.set("kia",3000);
+    // car.set("shift",500);
+    // car.delete("shift");
+    // car.clear();
+    // car.has("kia");
+        //document.getElementById("demo").innerHTML=car.get("shift");
+        document.getElementById("demo").innerHTML=car.size;
+     // document.getElementById("demo").innerHTML=car.delete("shift");
+    // document.getElementById("demo").innerHTML=text;
+    </script>
+
+</body>
+</html>

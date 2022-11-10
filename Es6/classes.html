@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="classdemo">classes in javascript</p>
+    <script>
+        class person{
+            constructor(name,year){
+               this.name=name;
+                this.year=year;
+            }
+            sum(a,b)
+            {
+                const c=a+b;
+                return c;
+            }
+        }
+        const p=new person("aangi",22);
+        document.getElementById("classdemo").innerHTML=p.sum(2,3); // calling in method
+
+         document.getElementById("classdemo").innerHTML=p.name+" "+p.year;// class object
+    </script>
+</body>
+</html>

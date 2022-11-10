@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //global method
+       // document.getElementById("demo").innerHTML=isFinite(10/0)+"<br>"+isFinite(10/1);
+      //  document.getElementById("demo").innerHTML=isNaN("hello")+"<br>"+isNaN("10");
+      //object entries
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        const f = fruits.entries();
+
+    for (let x of f) {
+        document.getElementById("demo").innerHTML += x + "<br>";
+    }
+    </script>
+</body>
+</html>
